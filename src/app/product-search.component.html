@@ -1,5 +1,5 @@
 <div class = 'container'>
-   <h1>Ask question</h1>
+   <h1>Add recipe</h1>
 
    <form (ngSubmit)='onSubmit()'>
 
@@ -8,13 +8,13 @@
          <input type = 'text' formControlName='name'>
          <br/>
          <label for = 'calories'>Caloriën:</label>
-         <input type = 'number' formControlName='name'>
+         <input type = 'number' formControlName='calories'>
          <br/>
          <label for = 'ingredients'>Ingedriënten:</label>
-         <input type = 'text' formControlName='name'>
+         <input type = 'text' formControlName='ingredients'>
          <br/>
          <label for = 'time'>Benodigde Tijd:</label>
-         <input type = 'text' formControlName='name'>
+         <input type = 'text' formControlName='time'>
       </div>
       <br />
       <button type='submit' class='btn btn-success'>Submit</button>
