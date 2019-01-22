@@ -1,8 +1,8 @@
 export class Product {
 
-   constructor (public question: string, public answer: string) {}
+   constructor (public name: string, public calories: number, public ingredients: string, public time: number) {}
 
    toForm(): string {
-      return `question=${this.question}&answer=${this.answer}`;
+      return `name=${this.name}&calories=${this.calories}&ingredients=${this.ingredients}&time=${this.time}`;
    }
 }

@@ -1,11 +1,13 @@
 "use strict";
 var Product = (function () {
-    function Product(question, answer) {
-        this.question = question;
-        this.answer = answer;
+    function Product(name, calories, ingredients, time) {
+        this.name = name;
+        this.calories = calories;
+        this.ingredients = ingredients;
+        this.time = time;
     }
     Product.prototype.toForm = function () {
-        return "question=" + this.question + "&answer=" + this.answer;
+        return "name=" + this.name + "&calories=" + this.calories + "&ingredients=" + this.ingredients + "&time=" + this.time;
     };
     return Product;
 }());
